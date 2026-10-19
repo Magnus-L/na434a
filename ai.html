@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI · NA434A Corporate Finance</title>
+<meta name="description" content="Corporate Finance (NA434A/FE434A), Örebro University: course site">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23232b65%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22sans-serif%22 font-size=%2228%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3ECF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>NA434A</b> <span>Corporate Finance</span></a>
+    <nav>
+      <a href="index.html">Course</a>
+      <a href="guide.html">Course guide</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="case.html">AI-project case</a>
+      <a href="exam.html">Exam</a>
+      <a href="ai.html">AI in this course</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>AI in this course</h1>
+<p class="subtitle">Use it to learn faster, not to skip the
+learning.</p>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>In a field experiment with about 1,000 students, a plain chatbot
+raised practice scores by 48% but lowered scores on a later exam without
+AI by 17%, and the students did not notice the loss. A version set up as
+a <em>tutor</em>, giving hints instead of answers, raised practice
+scores without the loss (Bastani et al., 2025, <em>PNAS</em> 122(26):
+e2422633122). The exam in this course is taken without AI. Use AI the
+tutor way.</p>
+<h2 id="five-rules">Five rules</h2>
+<ol type="1">
+<li><strong>Try first yourself:</strong> write down what the step should
+do before you ask (which cash flow, which discount rate, why).</li>
+<li><strong>Use AI to explain, check or suggest an alternative</strong>,
+not to build the whole model or write your page.</li>
+<li><strong>Test</strong> what it gives you on a case where you know the
+answer: a worked example in the book, or the course workbook.</li>
+<li><strong>Explain</strong> every number, and say which assumption
+drives it.</li>
+<li><strong>Own the result:</strong> mark cells or steps that came from
+AI with a cell comment “AI:”; you answer for all of them, including in
+the questions on 9 December.</li>
+</ol>
+<h2 id="safe-use">Safe use</h2>
+<ul>
+<li>Never paste personal data, or material you are not allowed to share,
+into a chatbot.</li>
+<li>Chatbots get finance arithmetic wrong with confidence: a misplaced
+tax rate or a cash flow discounted one year too many. Rule 3 applies to
+every answer.</li>
+</ul>
+<h2 id="your-course-tutor-prompt">Your course tutor prompt</h2>
+<p>Paste this into your chatbot at the start of a conversation. It makes
+the chatbot give hints instead of solutions.</p>
+<pre class="text"><code>You are my tutor in a master&#39;s course in corporate finance (Berk and DeMarzo: capital structure,
+payout policy, WACC, APV and flow to equity, firm valuation). I am learning, not delivering.
+Follow these rules in every answer:
+
+1. Do not solve my problem or build my spreadsheet. Give me a hint, a question, or the name of the
+   concept or formula to look up. If I am still stuck after two hints, show a SMALL example with
+   different numbers, never my own task.
+2. When my answer differs from the book&#39;s, ask me first which cash flow or rate I think is wrong.
+   Then point me to the step and the concept, not the fix.
+3. When I show a calculation that works, ask me to predict what happens to the value if one input
+   changes, or to explain one step in my own words.
+4. If I ask you to summarise a chapter or article, refuse and instead ask me two questions about it.
+5. Keep answers short. End every answer with one question that makes me think.
+6. Never ask me to paste personal data.</code></pre>
+</main>
+<footer class="wrap">
+  <p>Corporate Finance, Second Cycle (NA434A/FE434A). Örebro University, autumn 2026.
+  Course responsible: <a href="https://magnuslodefalk.com">Magnus Lodefalk</a>. Part I: Taylan Mavruk.</p>
+  <p>Written in plain text and built with pandoc. Updated 2026-10-19.</p>
+</footer>
+<script>
+document.querySelectorAll("pre").forEach(function (pre) {
+  var b = document.createElement("button");
+  b.className = "copy"; b.type = "button"; b.textContent = "Copy";
+  b.addEventListener("click", function () {
+    var txt = pre.querySelector("code") ? pre.querySelector("code").innerText : pre.innerText;
+    navigator.clipboard.writeText(txt).then(function () {
+      b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500);
+    });
+  });
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

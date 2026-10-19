@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sessions · NA434A Corporate Finance</title>
+<meta name="description" content="Corporate Finance (NA434A/FE434A), Örebro University: course site">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23232b65%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22sans-serif%22 font-size=%2228%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3ECF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>NA434A</b> <span>Corporate Finance</span></a>
+    <nav>
+      <a href="index.html">Course</a>
+      <a href="guide.html">Course guide</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="case.html">AI-project case</a>
+      <a href="exam.html">Exam</a>
+      <a href="ai.html">AI in this course</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Sessions</h1>
+<p class="subtitle">Part II: slides, workbooks and exercises appear here
+after each session</p>
+<p>Each Part II session has the same shape: about an hour of lecture
+with a worked example in Excel, then a short exercise in pairs, solved
+together before the session ends. Read the chapter before you come, and
+bring a laptop with Excel.</p>
+<h2 id="part-i-taylan-mavruk">Part I (Taylan Mavruk)</h2>
+<p>Materials for Part I are shared by Taylan.</p>
+<h2 id="part-ii-magnus-lodefalk">Part II (Magnus Lodefalk)</h2>
+<h3 id="s1">S1 · Ch. 16 Financial distress, managerial incentives and
+information</h3>
+<p>Why firms do not borrow as much as the tax shield alone suggests: the
+costs of financial distress, agency problems between shareholders,
+lenders and managers, and what debt and equity issues signal. <span
+class="badge">posted before class</span></p>
+<h3 id="s2">S2 · Ch. 17 Payout policy</h3>
+<p>Dividends or buybacks, and why taxes, signalling and clienteles make
+the choice matter. <span class="badge">posted before class</span></p>
+<h3 id="s3">S3 · Ch. 18 Capital budgeting and valuation with
+leverage</h3>
+<p>WACC, APV and flow to equity as one method in three forms, and which
+to use for which debt policy. The session opens with the AI-project
+presentations. <span class="badge">posted before class</span></p>
+<h3 id="s4">S4 · Ch. 19 Valuation and financial modelling</h3>
+<p>Valuing a Swedish firm step by step, from forecast to share price,
+and checking a valuation for the errors that matter most. <span
+class="badge">posted before class</span></p>
+<h3 id="guest">Guest lecture · Patrick Nimander</h3>
+<p>Export finance, short-term finance and the role of the CFO, from
+Kommuninvest and EKN. Part of the exam.</p>
+</main>
+<footer class="wrap">
+  <p>Corporate Finance, Second Cycle (NA434A/FE434A). Örebro University, autumn 2026.
+  Course responsible: <a href="https://magnuslodefalk.com">Magnus Lodefalk</a>. Part I: Taylan Mavruk.</p>
+  <p>Written in plain text and built with pandoc. Updated 2026-10-19.</p>
+</footer>
+<script>
+document.querySelectorAll("pre").forEach(function (pre) {
+  var b = document.createElement("button");
+  b.className = "copy"; b.type = "button"; b.textContent = "Copy";
+  b.addEventListener("click", function () {
+    var txt = pre.querySelector("code") ? pre.querySelector("code").innerText : pre.innerText;
+    navigator.clipboard.writeText(txt).then(function () {
+      b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500);
+    });
+  });
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

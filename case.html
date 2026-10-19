@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-project case · NA434A Corporate Finance</title>
+<meta name="description" content="Corporate Finance (NA434A/FE434A), Örebro University: course site">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23232b65%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22sans-serif%22 font-size=%2228%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3ECF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>NA434A</b> <span>Corporate Finance</span></a>
+    <nav>
+      <a href="index.html">Course</a>
+      <a href="guide.html">Course guide</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="case.html">AI-project case</a>
+      <a href="exam.html">Exam</a>
+      <a href="ai.html">AI in this course</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>The AI-project case</h1>
+<p class="subtitle">Part of the assignment (A001): a written page and an
+oral presentation, in pairs</p>
+<p>A firm considers investing in an AI system that takes over part of
+its tasks. Is the investment profitable, when should it start, and does
+it cut jobs? You answer with the tools of the course: free cash flow,
+NPV, IRR and sensitivity analysis.</p>
+<p><span class="badge">handed out at the first Part II
+session</span></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Part II session</td>
+<td>Case handed out, pairs formed, anonymous pair numbers</td>
+</tr>
+<tr>
+<td>Mon 7 Dec, 09:00</td>
+<td>Excel solution posted here</td>
+</tr>
+<tr>
+<td>Mon 7 Dec, 23:59</td>
+<td>Each pair hands in one page and up to three slides</td>
+</tr>
+<tr>
+<td>Wed 9 Dec</td>
+<td>Every pair ready to present; five pairs present for five minutes
+each and answer questions</td>
+</tr>
+</tbody>
+</table>
+</main>
+<footer class="wrap">
+  <p>Corporate Finance, Second Cycle (NA434A/FE434A). Örebro University, autumn 2026.
+  Course responsible: <a href="https://magnuslodefalk.com">Magnus Lodefalk</a>. Part I: Taylan Mavruk.</p>
+  <p>Written in plain text and built with pandoc. Updated 2026-10-19.</p>
+</footer>
+<script>
+document.querySelectorAll("pre").forEach(function (pre) {
+  var b = document.createElement("button");
+  b.className = "copy"; b.type = "button"; b.textContent = "Copy";
+  b.addEventListener("click", function () {
+    var txt = pre.querySelector("code") ? pre.querySelector("code").innerText : pre.innerText;
+    navigator.clipboard.writeText(txt).then(function () {
+      b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500);
+    });
+  });
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>
